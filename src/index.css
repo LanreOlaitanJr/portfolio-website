@@ -43,3 +43,48 @@
   box-shadow: 0 0 20px rgba(70, 86, 151, 0.6);
 }
 
+/* Gradient text animation */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #465697, #6b82c4, #465697);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced hover effects */
+.card-hover {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+}
+
+/* Shimmer effect for loading */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+
