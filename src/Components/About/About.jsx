@@ -17,7 +17,7 @@ const About = () => {
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
             <p className="mt-3 text-slate-300">
-              With over a year of professional experience, I create reliable frontends that emphasize performance, accessibility and thoughtfully crafted interfaces.
+              With 1+ years of professional experience, I create reliable frontends that emphasize performance, accessibility and thoughtfully crafted interfaces.
             </p>
 
             <div className="mt-6 grid gap-4">
