@@ -5,3 +5,41 @@
 * {
   scroll-behavior: smooth;
 }
+
+/* Animate elements on load */
+@layer components {
+  .animate-on-scroll {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .nav-link {
+    @apply relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #465697, #6b82c4);
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
+
+/* Button glow effect */
+.btn-glow {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(70, 86, 151, 0.3);
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(70, 86, 151, 0.6);
+}
+

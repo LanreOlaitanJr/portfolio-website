@@ -1,13 +1,12 @@
-import React from "react";
 import { useState, useEffect } from "react";
 const TextChange = () => {
-  const texts = ["Hi, I'm Aditi", "Hi, I'm Aditi", "Hi, I'm Aditi"];
   const [currenText, setCurrentText] = useState("");
   const [endValue, setendValue] = useState(true);
   const [isForward, setIsForward] = useState(true);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    const texts = ["Hi, I'm Olanrewaju"];
     const intervalId = setInterval(() => {
       setCurrentText(texts[index].substring(0, endValue));
       if (isForward) {
@@ -25,7 +24,7 @@ const TextChange = () => {
     }, 50);
 
     return () => clearInterval(intervalId);
-  }, [endValue, isForward, index, texts]);
+  }, [endValue, isForward, index]);
 
   return <div className="transition ease duration-300">{currenText}</div>;
 };
