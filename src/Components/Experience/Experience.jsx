@@ -65,7 +65,7 @@ const Experience = () => {
             <img src={springcore} alt="Springcore Africa" className="w-16 h-16 object-contain rounded-md" />
             <span className="text-white">
               <h2 className="leading-tight">Frontend Developer (Intern) — Springcore Africa</h2>
-              <p className="text-sm leading-tight font-thin">January 2025 - May 2025</p>
+              <p className="text-sm leading-tight font-thin">January 2025 - March 2025</p>
               <ul className="text-sm p-2">
                 <li>- Assisted in developing and maintaining web applications collaborating with developers and designers</li>
                 <li>- Learned and applied software development best practices in a professional environment</li>
@@ -79,7 +79,7 @@ const Experience = () => {
             <img src={springcore} alt="Springcore Africa" className="w-16 h-16 object-contain rounded-md" />
             <span className="text-white">
               <h2 className="leading-tight">Frontend Developer — Springcore Africa</h2>
-              <p className="text-sm leading-tight font-thin">January 2025 - May 2025</p>
+              <p className="text-sm leading-tight font-thin">March 2025 - Present</p>
               <ul className="text-sm p-2">
                 <li>- Debugged, optimized and refactored existing codebases</li>
                 <li>- Designed, developed and maintained scalable software solutions</li>
